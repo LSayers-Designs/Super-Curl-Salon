@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="eng">
+<!--
+Title:Book an Appointment
+File Name: pc_form.html
+Description: Input Form to Book an Appointment at Super Curls Salon
+Author: Letisha Rahming
+Creation Date: 1/26/2020
+Date Completed:
+Last Edited:2/2/2020
+-->
+
+<head>
+	<meta charset="utf-8" />
+	<title>Book an Appointment</title>
+	<meta name = "keywords" content = "super curly hair salon"/>
+	<meta name = "viewport" content = "width-device-width, initial-scale-1"/>
+	<link href="https://fonts.googleapis.com/css?family=Leckerli+One|Montserrat|Pacifico|Roboto&display=swap" rel="stylesheet">
+	<link href ="pc_formstyle2.css" rel= "stylesheet"/>
+	<script src="pc_javascript.js" defer></script>
+</head>
+
+<body id="form">
+	<header>	
+	<nav>
+		<ul id="mainmenu">
+		<li><a href= "pc_main.html" ><img src="pc_images/logo11.png"></a></li>
+		<li><a href= "pc_main.html" >Home</a></li>
+		<li><a href= "pc_about.html" >Stylists</a></li>
+		<li><a href= "pc_services.html">Services</a></li>
+		<li><a href= "pc_portfolio2.html">Portfolio</a></li>		
+		</ul>
+	</nav>
+	</header>	
+	<main>
+		<form id="apptform" name="form" method="post"><!--Start of for the user inputs salon services requested-->
+			<fieldset>
+				<h2 id="titleform" >Please Fill Out Our Appointment Form</h2>
+				<p>Fields marked with an asterisk (*) are required.</p>
+			</fieldset>
+			<br/>
+			<fieldset><!--Contact Information Fieldset.  All text inputs must have at least 2 characters and phone must have 10 digits -->
+			<legend>Client Contact Information*</legend>
+				<div class="formRow">
+					<label for="first">First Name:</label>
+					<input type="text" name="firstname" id="clientfn" required>
+				</div><br/>
+				<div class="formRow">
+					<label for="last">Last Name:</label>
+					<input type="text" name="lastname" id="clientln" required>
+				</div><br/>
+				<div class="formRow">
+					<label for="phone">Telephone:</label>
+					<input type="tel" name="phone" id="clientphone" required>
+				</div><br/>
+			</fieldset>
+			<br/>
+			<fieldset id = "clientdetails"><!--Client Details and Service REquest(s) Fieldset-->
+			<legend>Appointment Details*</legend>
+				<div class="formRow"><!--Client Type.  Must Choose at least one box-->
+					<table id="timeslot" style="width:80%">
+						<tr>
+							<h4>Please inicate your client type.</h4>
+						<tr>
+							<td><input type="radio" name="client" value="adult" required> Adult (13 years and up)</input></td>
+						</tr>
+						<tr>
+							<td><input type="radio" name="client" value="child"> Child (12 years and under)</input></td>
+						</tr>
+				</div>
+				<div class="formRow"><!--Client Arrival time.  Must Choose at least one box-->
+					<table id="servicedate" style="width:80%">
+						<tr>
+							<h4>What day would you like to come in?</h4>
+							<input type="date" id="servicedate">
+						</tr>
+				<div class="formRow"><!--Client Arrival time.  Must Choose at least one box-->
+					<table id="timeslot" style="width:80%">
+						<tr>
+							<h4 id="arrival">What time of day would you like to come in?</h4>
+						</tr>
+						<tr>
+							<td><input type="radio" name="time" value="t1">The Morning Rush: 7:00AM-9:45AM (First appointment time is 7:00AM)</td>
+						</tr>
+						<tr>
+							<td><input type="radio" name="time" value="t2"required>Mid-Morning: 10:00AM-12:45PM </td>
+						</tr>
+						<tr>
+							<td><input type="radio" name="time" value="t3">Early Afternoon: 1:00PM-3:45PM </td>
+						</tr>
+						<tr>
+							<td><input type="radio" name="time" value="t4">Rush Hour: 4:00PM-6:45PM </td>
+						</tr>
+						<tr>
+							<td><input type="radio" name="time" value="t5">After Hours: 7:00PM-9:45PM (Last appointment time is 9:45PM) </td>
+						</tr>
+					</table>
+				</div>
+				<br/>
+			</fieldset>
+				<br/>
+			<fieldset id = "servicecheck" required><!--Client Details and Service REquest(s) Fieldset-->
+			<legend>Salon Service Details*</legend>
+				<div class="formRow"><!--Client Services Field set.  Must Choose at least one box-->
+					<table id=clientservices" style="width:80%">
+						<tr>
+							<h4 id="ss">Please select a service from one of the following categories: Hair Services, Barber Services or Hair Spa Services.</h4>
+						</tr>
+						<tr>
+							<h4 id=ss>Hair Services:</h4>
+						</tr>
+						<tr>
+							<td><input type="radio" name="sservice" value="s1" required >Curl Style</td>
+						</tr>
+						<tr>
+							<td><input type="radio" name="sservice" value="s2">Blowout Style</td>
+						</tr>
+						<tr>
+							<td><input type="radio" name="sservice" value="s3">Hair Cut and Style</td>
+						</tr>
+						<tr>
+							<td><input type="radio" name="sservice" value="s4">Special Occasion Style</td>
+						</tr>
+					</table>
+				</div>		
+				<div class="formRow">
+					<table id=clientservices" style="width:80%"><!--Men's barber Services Table Begins Here-->
+						<tr>
+							<h4 id=ms>Barber Services:</h4> 
+						</tr>
+							<td><input type="radio" name="sservice" value="b1">Men's Wet Hair Cut and Style</td>
+						</tr>
+						<tr>
+							<td><input type="radio" name="sservice" value="b2">Men's Dry Cut and Style*</td>
+						</tr>
+						<tr>
+							<td><input type="radio" name="sservice" value="b3">Men's Special Occasion Style</td>
+						</tr>
+					</table>
+				</div>
+				<div class="formRow"><!--Hair Spa Treatment Services Table Begins Here-->
+					<table id=hairspa" style="width:80%">
+						<tr>
+							<h4 id="spa"> Hair Spa Treatment Services:</h4>
+						</tr>
+						<tr>
+							<td><input type="radio" name="sservice" value="h1">Deep Hydrating Conditioning </td>
+						</tr>
+						<tr>
+							<td><input type="radio" name="sservice" value="h2">Curl Rejuvination </td>
+						</tr>
+						<tr>
+							<td><input type="radio" name="sservice" value="h3">Hair Repair </td>
+						</tr>
+						<tr>
+							<td><input type="radio" name="sservice" value="h4">Scalp Scrub and Massage </td>
+						</tr>
+					</table>
+				</div>
+			</fieldset>
+			<br/>
+			<fieldset>
+			<legend>Extra Style Services</legend>
+				<div class="formRow"><!--Style Services Table Begins Here-->
+					<table id=addstyle" style="width:80%">
+						<tr>
+							<h4 id="add">Check any box to enhance your style.</h4>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="aservice" value="a1">Threading/Waxing Service</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="aservice" value="a2">Straight Edge Shave</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="aservice" value="a3">Beard/Mustache Trim/Reshape</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="aservice" value="a4">Make-Up Refresher</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="aservice" value="a5">Full Make-Up Application</td>
+						</tr>
+					</table>
+				</div>
+			</fieldset>
+			<br/>
+			<fieldset><!--Contact Information Fieldset.  All text inputs must have at least 2 characters and phone must have 10 digits -->
+			<legend>Enter any special requests in the box below.</legend>
+				<div class="formRow">
+					<textarea type="text" name="comment" id="otherinfo" maxlength="200" size= "200px"></textarea>
+				</div>	
+			</fieldset>
+			<div><!--Form Button Is Here-->	
+				<input id="scsbutton" type="submit" value= "Schedule My Appointment" />
+			</div>
+		</form>
+	</main>	
+	<!--Confirmation Message Displays Here based on javasricpt-->	
+	<h5 id="confirm"></h5>
+	<br/>
+	<footer>
+	<section id="endpage">
+	 <p>&copy;2020 Super Curls Salon. &nbsp;&nbsp;&nbsp;&nbsp;Digital Marketing by: L-Sayers Designs Ltd.</p>
+	</section>
+	</footer>
+</body>
+</html>

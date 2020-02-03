@@ -1,0 +1,170 @@
+/*
+Title:Super Curls Salons
+File Name: pcformstyle.css
+Description: Style Page exclusively for the salon service request form.
+Author: Letisha Rahming
+Creation Date: 1/26/2020
+Date Completed:
+Last Edited:1/31/2020
+Devveloper note:  For ease of reference, styling effects are put in order from top to bottom of web page (99% of the time).
+*/
+
+body {
+	margin: 0;
+}
+
+header{
+	width:100%;
+	background-color: rgb(241,241,243); /* For browsers that do not support gradients */
+	background-image: linear-gradient(rgb(196,196,198), rgb(241,241,243), rgb(239,240,242)); 
+	height:78px;
+	top: 0;
+}
+
+ol,ul {
+	list-style: none;
+}
+
+#mainmenu {
+	margin: 10px;
+	padding: 0;
+	width: 80%;
+	max-width: 760px;
+	font-family: 'Leckerli One', cursive;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#mainmenu li {
+	display:block;
+	border:1px rgba(250,250,250,.7);
+	text-align:center;
+	flex: 1 1 0;
+}
+
+#mainmenu a {
+	display:block;
+	padding:3px;
+	text-decoration:none;
+	color:#009;
+}
+
+#mainmenu .main-logo a {
+	padding: 0;
+	font-size: 0;
+}
+
+#mainmenu .main-logo {
+	max-width: 134px;
+}
+		
+	
+bodynav>ul>li{
+	margin-right:auto;
+	float: right;
+}
+
+
+body{
+	background-image: url("pc_images/salonappt.jpg") ;
+	background-repeat:no-repeat;
+    background-size:cover;
+	background-attachment:fixed;
+	color: white;
+	display:block;
+	width: 100%;
+	margin-left: auto;
+	margin-right:auto;
+}
+
+form{
+	background: rgba(143, 145, 230, 0.70);	
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	max-width: 760px;
+	min-width: 440px;
+	font-family: 'Montserrat', sans-serif;  
+	float:center;
+}
+
+fieldset {
+  border-color:rgba(250,250,250,.7);
+}
+
+input{
+	cursor: pointer;
+}
+
+legend{
+	font-family: 'Leckerli One', cursive;
+	font-size: 20px;
+}
+
+h2{
+	font-family: 'Pacifico', serif;
+	text-align:center;
+	margin-left: auto;
+	margin-right: auto;
+    font-size: 35px;
+}
+
+#confirm{
+	margin-left: auto;
+	margin-right:auto;
+}
+
+div.formRow > label {
+	width: 100px;
+	display: block;
+	margin-right: 25px;
+	margin-right: 25px;
+	font-family: 'Montserrat', sans-serif;
+	text-align: right;
+}
+
+div.formRow>*{
+	display: block;
+}
+
+textarea{
+	height:50px;
+	width:400px;
+}
+
+#scsbutton{
+	display: block;
+	margin-left: 20px;
+	vertical-align: text-top;
+	width: 100%;
+	background-color: rgb(250,159,137);
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+footer{
+	background-color: rgb(241,241,243); /* For browsers that do not support gradients */
+	background-image: linear-gradient(rgb(196,196,198), rgb(186,186,188), rgb(176,176,178)); 
+	
+}
+
+
+p:nth-last-of-type(1) {
+	text-align: center;
+	line-height: 1.5;
+	font: 8px;
+}
+
+#confirm{
+	bottom: 5em;
+	
+}

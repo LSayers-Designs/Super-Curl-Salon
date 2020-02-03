@@ -1,0 +1,373 @@
+/*
+Title:Super Curls Salons
+File Name: pc.css
+Description: Style Page for Super Curls Salon website
+Author: Letisha Rahming
+Creation Date: 1/26/2020
+Date Completed:
+Last Edited:1/31/2020
+Developer note:  For ease of reference, styling effects are put in order from top to bottom of web page(s) (99% of the time)
+Also note:File names prefix (pc_) were established prior to the naming the salon which went through thorough market testing before final decision (read: The actual name came to me a couple of days later of starting this project).
+*/
+
+/*------------------Global Styling and Color Schematics:30%-White 40%-Gray 15%lavander 5%Coral--------------------*/
+body {
+	margin: 0;
+}
+
+a{
+	text-decoration:none;
+}
+header{
+	width:100%;
+	background-color: rgb(241,241,243); /* For browsers that do not support gradients */
+	background-image: linear-gradient(rgb(196,196,198), rgb(241,241,243), rgb(239,240,242)); 
+	height:78px;
+	top: 0;
+}
+
+ol,ul {
+	list-style: none;
+}
+
+#mainmenu {
+	margin: 10px;
+	padding: 0;
+	width: 80%;
+	max-width: 760px;
+	font-family: 'Great Vibes', cursive;
+	font-weight: bold;
+	font-size: 2.0em;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#mainmenu li {
+	display:block;
+	border:1px rgba(250,250,250,.7);
+	text-align:center;
+	flex: 1 1 0;
+}
+
+#mainmenu a {
+	display:block;
+	padding:3px;
+	text-decoration:none;
+	color:#009;
+	cursor: pointer;
+}
+
+#mainmenu .main-logo a {
+	padding: 0;
+	font-size: 0;
+}
+
+#mainmenu .main-logo {
+	max-width: 134px;
+}
+		
+	
+bodynav>ul>li{
+	margin-right:auto;
+	float: right;
+}
+
+#scsbutton{
+	display: block;
+	margin-left: 20px;
+	vertical-align: text-top;
+	width: 100%;
+	background-color: rgb(250,159,137);
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+main{
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+footer{
+	background-color: rgb(241,241,243); /* For browsers that do not support gradients */
+	background-image: linear-gradient(rgb(196,196,198), rgb(186,186,188), rgb(176,176,178)); 
+	width: 100%; 
+	max-height:4.5em;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 7em;
+	font-size: 1.0em;
+	
+}
+
+p:nth-last-of-type(1) {
+	text-align: center;
+	line-height: 1.5;
+	font: 8px;
+}
+
+/*-------------------------------------Main page styling-------------------------------------------------------*/
+#homepage{
+	background: url("pc_images/salon_entry1.jpg");
+	background-repeat:no-repeat;
+    background-size:cover;
+	color: white;
+}
+
+#homepage h1{
+	font-size: 5em;
+	font-family: 'Great Vibes', cursive;
+	display: block;
+	margin-left: 50px;
+	text-shadow: 2px 2px rgb(250,159,137);
+	margin-top: 1em;
+}
+
+#homepage #aboutus {
+	background-color: rgba(250,250,250, .9);
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	min-width: 300px;
+	max-width: 500px;
+	color: #009;
+	font-size:1.75em;
+	margin-bottom: 3em;
+	padding: 14px 20px;
+	font-family: 'Handlee', cursive;
+}
+
+#homepage div{
+	flex: 1 1 0;
+	border-radius: 10%;
+	
+}
+
+#homepage #bookappt {
+	display: block;
+	background-color: rgb(250,159,137);
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 1.75em;
+	color: white;
+	padding: 15px 20px;
+	height: 75px;
+	width: 300px;
+	margin-bottom: 5.0em;
+	align-items: center;
+	padding: 0;
+	cursor: pointer;
+	
+	
+}
+
+/*-------------------------------------About page styling-------------------------------------------------------*/
+#aboutpage {
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 95%;
+	max-width: 960px;
+	min-width: 640px;
+	background-image: url("pc_images/salon1a.jpg");
+	background-attachment:fixed;
+	overflow:scroll;
+	background-repeat:no-repeat;
+    background-size:cover;
+	font-family: 'Montserrat', sans-serif;   
+}
+
+
+#aboutpage img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#aboutpage {
+	color: white;
+}
+
+#aboutpage section {
+	background-color: rgba(215,215,215, .85);
+	margin-bottom: 75px;
+	color: #009;
+	width:500px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#aboutpage #bookappt {
+	display: block;
+	margin-left: 20px;
+	vertical-align: text-top;
+	width: 100%;
+	background-color: rgb(250,159,137);
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+/*<---------------------------------Services Page Styling------------------------------------------->*/
+
+#servicespage{
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 95%;
+	max-width: 960px;
+	min-width: 640px;
+	background-image: url("pc_images/salon2.jpg");
+	background-attachment:fixed;
+	overflow:scroll;
+	background-repeat:no-repeat;
+    background-size:cover;
+	font-family: 'Montserrat', sans-serif;
+}
+
+#servicespage section{
+	background-color: rgba(215,215,215, .85);
+	margin-bottom: 75px;
+	color: #009;
+	min-width:500px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#servicespage section dt{
+	font-weight: bold;
+}
+
+#servicespage section dl{
+	margin-left: 5px;
+}
+
+#servicespage h2{
+	text-align:center;
+}
+
+#servicespage h3, h4{
+	font-family: 'Handlee', cursive;
+}
+
+#servicespage h5{
+	font-family: 'Handlee', cursive;
+	margin-left: 5px;
+	font-size:14px;
+}
+
+
+#servicespage #bookappt {
+	display: flex;
+	background-color: rgb(250,159,137);
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 1.75em;
+	color: white;
+	height: 75px;
+	width: 300px;
+	margin-bottom: 5.0em;
+	align-items: center;
+	cursor: pointer;
+}
+
+#servicespage footer {
+color: white;
+}
+
+
+/*<-------------------------------------------Portfolio Page Styling------------------------------------------>*/
+
+#portfolio2{
+	
+	background-image: url("pc_images/salon3.jpg");
+    background-size:cover;
+	color: white;
+}
+
+#portfolio2  h2{
+	font-family: 'Great Vibes', cursive;
+	font-size: 2em;
+	color: rgba(215,215,215, .85);
+}
+
+#portfolio2 body {
+	display: flex;
+	width: 95%;
+	background-color: gray;
+}
+
+#portfolio2 section {
+width: 90%;
+
+}
+
+#portfolio2 img{
+	max-width: 300px;
+	max-height:300px;
+	margin-left: 1em;
+	margin-right: 1em;
+}
+
+#portfolio2 #ecs{
+	margin-left:auto;
+	margin-right:auto;
+}
+#portfolio2 #spo{
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#portfolio2 #wcs{
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#portfolio2 #mch{
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#portfolio2 #yth{
+	margin-left:auto;
+	margin-right:auto;
+}
+#portfolio2 #chi{
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#portfolio2 #bookappt {
+	display: flex;
+	background-color: rgb(250,159,137);
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 1.75em;
+	color: white;
+	height: 75px;
+	width: 300px;
+	margin-bottom: 5.0em;
+	margin-top: 1.5em;
+	align-items: center;
+	cursor: pointer;
+}
