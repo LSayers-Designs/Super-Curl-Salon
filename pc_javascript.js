@@ -10,7 +10,7 @@ Last Edited:1/28/2020
 */
 
 
-//Book an appointment
+//Book an appointment event listener
 document.getElementById("scsbutton").addEventListener("click", setUpPage);
 
 // function that calls ALL OTHER functions on the click of the button
@@ -21,6 +21,7 @@ function setUpPage() {
 	confirmation();
 }
 
+//A client type must be selected.  This is useful for data queries and formulating cost of service  All radio buttons share the same class "client".
 function verifyClient() {
   var clientType = document.forms.form.elements.client[0];
   
@@ -52,6 +53,10 @@ function verifyService() {
   }
 }
 
+//This function garantees at least the client contact information is sent to the receptionist to confirm details of an appointment request.  Since curly hair usually requires more of the stylist's   Overbooking is not allowed
 function confirmation() {
-	document.getElementById("confirm").innerHTML="Appointment request sent. \n Our receptionist will call you shortly to confirm the details of your appointment. \n Thank you for choosing Super Curl Salon for your styling needs.";
+	if(((document.getElementById("clientfn").value!="")&&(document.getElementById("clientln").value!="")&&(document.getElementById("clientphone").value!="") /*&& (document.getElementsByClassName("client").checked == true)*/)){
+		document.getElementById("scsbutton").value="Thank you. Our receptionist will call you shortly to confirm your appointment.";
+		document.getElementById("scsbutton").style="background-color:lightgreen";
 	}
+}

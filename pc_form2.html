@@ -33,7 +33,7 @@ Last Edited:2/2/2020
 	</nav>
 	</header>	
 	<main>
-		<form id="apptform" name="form" method="post"><!--Start of for the user inputs salon services requested-->
+		<form id="apptform" name="form" method="post" onclick="(setUpPage)" style="visibility:"><!--Start of for the user inputs salon services requested-->
 			<fieldset>
 				<h2 id="titleform" >Please Fill Out Our Appointment Form</h2>
 				<p>Fields marked with an asterisk (*) are required.</p>
@@ -80,13 +80,13 @@ Last Edited:2/2/2020
 							<h4 id="arrival">What time of day would you like to come in?</h4>
 						</tr>
 						<tr>
-							<td><input type="radio" name="time" value="t1">The Morning Rush: 7:00AM-9:45AM (First appointment time is 7:00AM)</td>
+							<td><input type="radio" name="time"  id="t1">The Morning Rush: 7:00AM-9:45AM (First appointment time is 7:00AM)</td>
 						</tr>
 						<tr>
 							<td><input type="radio" name="time" value="t2"required>Mid-Morning: 10:00AM-12:45PM </td>
 						</tr>
 						<tr>
-							<td><input type="radio" name="time" value="t3">Early Afternoon: 1:00PM-3:45PM </td>
+							<td><input type="radio" name="time"  value="t3">Early Afternoon: 1:00PM-3:45PM </td>
 						</tr>
 						<tr>
 							<td><input type="radio" name="time" value="t4">Rush Hour: 4:00PM-6:45PM </td>
@@ -191,17 +191,15 @@ Last Edited:2/2/2020
 					<textarea type="text" name="comment" id="otherinfo" maxlength="200" size= "200px"></textarea>
 				</div>	
 			</fieldset>
-			<div><!--Form Button Is Here-->	
-				<input id="scsbutton" type="submit" value= "Schedule My Appointment" />
+			<div id="button"><!--Form Button Is Here-->	
+				<input id="scsbutton" onclick="(setUpPage)" style="background-color:" type="submit" value= "Book My Appointment." />
 			</div>
 		</form>
-	</main>	
-	<!--Confirmation Message Displays Here based on javasricpt-->	
-	<h5 id="confirm"></h5>
+	</main>		
 	<br/>
 	<footer>
 	<section id="endpage">
-	 <p>&copy;2020 Super Curls Salon. &nbsp;&nbsp;&nbsp;&nbsp;Digital Marketing by: L-Sayers Designs Ltd.</p>
+		<p>&copy;2020 Super Curls Salon. &nbsp;&nbsp;&nbsp;&nbsp;Digital Marketing by: L-Sayers Designs Ltd.</p>
 	</section>
 	</footer>
 </body>

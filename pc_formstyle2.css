@@ -6,7 +6,7 @@ Author: Letisha Rahming
 Creation Date: 1/26/2020
 Date Completed:
 Last Edited:1/31/2020
-Devveloper note:  For ease of reference, styling effects are put in order from top to bottom of web page (99% of the time).
+Devveloper note:  For ease of reference, styling effects are put in order from top to bottom of web page (96% of the time).
 */
 
 body {
@@ -79,6 +79,7 @@ body{
 	margin-right:auto;
 }
 
+/*----------------------Begining of Form----------------------------------------------------*/
 form{
 	background: rgba(143, 145, 230, 0.70);	
 	display:block;
@@ -86,7 +87,7 @@ form{
 	margin-right: auto;
 	width: 80%;
 	max-width: 760px;
-	min-width: 440px;
+	min-width: 300px;
 	font-family: 'Montserrat', sans-serif;  
 	float:center;
 }
@@ -109,7 +110,6 @@ h2{
 	text-align:center;
 	margin-left: auto;
 	margin-right: auto;
-    font-size: 35px;
 }
 
 #confirm{
@@ -142,14 +142,16 @@ textarea{
 	width: 100%;
 	background-color: rgb(250,159,137);
 	color: white;
-	padding: 14px 20px;
+	padding: 15px 15px;
 	margin: 8px 0;
 	border: none;
 	border-radius: 4px;
 	cursor: pointer;
 	font-weight: bold;
 	font-size: 20px;
+	height: 100%;
 }
+/*------------------------------------------End of Form*------------------------------------------------------/
 
 footer{
 	background-color: rgb(241,241,243); /* For browsers that do not support gradients */
@@ -164,7 +166,3 @@ p:nth-last-of-type(1) {
 	font: 8px;
 }
 
-#confirm{
-	bottom: 5em;
-	
-}
